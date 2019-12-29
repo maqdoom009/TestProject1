@@ -16,8 +16,7 @@ public class VerifyValidLogin  {
 		
 		 WebDriver driver =new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
-		//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://opensource-demo.orangehrmlive.com/");
-	
+			
 		LoginPageNew login = PageFactory.initElements(driver, LoginPageNew.class);
 	
 		login.LoginHRM("Admin", "admin123");
