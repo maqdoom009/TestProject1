@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 import PageLayer.LoginPageNew;
 import PageLayer.OrangeHomePage;
 
-public class VerifyValidLogin extends OrangeHomePage {
+public class VerifyValidLogin  {
 
 	@Test
 	public void checklogin()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		
-		 driver =new ChromeDriver();
+		 WebDriver driver =new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://opensource-demo.orangehrmlive.com/");
 	
