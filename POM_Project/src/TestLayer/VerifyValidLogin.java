@@ -10,7 +10,7 @@ import PageLayer.OrangeHomePage;
 public class VerifyValidLogin  {
 
 	@Test
-	public void checklogin()
+ 	public void checklogin()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
 		
@@ -21,10 +21,7 @@ public class VerifyValidLogin  {
 	
 		login.LoginHRM("Admin", "admin123");
 		
-		OrangeHomePage hp = PageFactory.initElements(driver, OrangeHomePage.class);
-		
-	
-		hp.checkHomepage("Mr Maqdoom", "Junaid");
+		driver.close();
 	
 	 
 	}
